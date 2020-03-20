@@ -3,12 +3,13 @@
   width: 100%;
   margin: 0 auto 10em;
   line-height: 1.6rem;
+  padding: 15px;
 }
 
 .blogtitle {
   font-size: 2.2rem;
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   line-height: 1;
 }
 

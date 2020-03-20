@@ -1,12 +1,11 @@
 .pageBlogs {
-  padding: 0 5%;
+  padding: 0 0 40px 5%;
 }
 
 .pageTitle {
   position: relative;
   display: inline-block;
   font-weight: 500;
-  font-family: serif;
 }
 
 .pageTitle:after {
@@ -49,6 +48,7 @@ h2 {
 
 .loadingPlaceholder .blogtitle {
   height: 24px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .loadingPlaceholder .loadingBody {

@@ -16,6 +16,26 @@ const Home = () => {
 		}
 	},[]);
 
+	const quotes = [
+		"La sencillez es la máxima sofisticación.",
+		"Siempre habrá más por construir de lo que realmente tenemos tiempo o recursos para ello.",
+		"Pon al usuario en primer lugar. Inventa. Y sé paciente.",
+		"Si para alimentar a tu equipo necesitas más de dos pizzas, es que tu equipo es demasiado grande.",
+		"Decidir qué NO hacer es igual de importante que el decidir qué hacer.",
+		"Tener demasiadas reglas entorpece la innovación."
+	];
+
+	const authors = [
+		"Leonardo Da Vinci",
+		"Jeff Patton",
+		"Jeff Bezos, Amazon",
+		"Jeff Bezos, Amazon",
+		"Steve Jobs, Apple",
+		"Sergey Brin, Google"
+	];
+
+	const randomPick = Math.floor((Math.random() * quotes.length));
+
 	return (
 		<div class={style.home}>
 			<div class={style.about}>
@@ -24,32 +44,10 @@ const Home = () => {
 				</div>
 				<div class={style.quote}>
 					<div class={style.details}>
-						Jane presents traditional spanish art with a modern twist. Her work is
-						excellent quality, her technique is brilliant and her love of the
-						subject matter shines through.
+						{quotes[randomPick]}
 					</div>
-					<div class={style.author}>- The Local Newspaper</div>
+					<div class={style.author}>- {authors[randomPick]}</div>
 				</div>
-			</div>
-			<div class={style.bio}>
-				<p class={style.bioleft}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				<p class={style.bioright}>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-					dolorem ipsum quia dolor sit amet, consectetur.
-				</p>
 			</div>
 		</div>
 	);
